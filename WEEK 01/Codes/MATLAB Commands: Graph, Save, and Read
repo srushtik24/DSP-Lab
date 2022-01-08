@@ -1,0 +1,49 @@
+%a) Generate elementary signals and display using plot, subplot and stem com-
+mands in MATLAB. Also add xlabel, ylabel, axis tight, grid on, legend to the figure:
+
+t=-10:0.1:10;
+x=10*sin(20*t+15);
+
+X=[-15:0.01:15];
+y=[zeros(1,100*15), ones(1,100*15+1)];
+
+subplot(2,1,1)
+plot(t,x);axis tight; grid ON; 
+hold ON;
+stem(t,x); legend('plot', 'stem');
+xlabel('Time'); ylabel('Amplitude'); title('Simple sine wave');
+hold OFF
+
+subplot(2,1,2)
+plot(X,y,'-'); axis tight; grid ON;  axis([-15 15 -2 2]);
+xlabel('Time'); ylabel('Amplitude'); title('Unit Step function');
+%--------------------------------------------------------------------------------------------
+
+%b)save, load, xlsread, xlswrite, audioread and audiowrite commands:
+
+%--------------------------------------------------------------------------------------------
+
+%d)readcell and writecell commands:
+
+S= {'Srushti',2000,datetime('today'),[1:5]};
+writecell(S);
+type 'S.txt'; %displays content as a list?
+C=readcell('S.txt'); %creates and array and reads the cell into it
+%--------------------------------------------------------------------------------------------
+
+%e)writematrix:
+R=[1:4;5:8;9:12;13:16];
+writematrix(R,'R.xls');
+
+P=readmatrix('R.xls')
+%--------------------------------------------------------------------------------------------
+
+%(f) Read and write audio files:
+%filename= 'Yiruma_RiverFlowsInYou.mp3';
+[y,Fs]=audioread('Yiruma_RiverFlowsInYou.mp3'); 
+%y is the variable that contains the audio signal
+%Fs stores the sampling rate.
+plot(y); axis tight; %Gives us the signal's waveform: Amplitude v/s
+         %the sample number.
+sound(y,Fs);
+clear sound %Stops playing music
