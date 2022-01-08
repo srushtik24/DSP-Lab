@@ -19,7 +19,7 @@ Z= Y*X
 %Multiplication
 W= Y.*X
 
-%Create a column vector X1, from the elements of the 4th row of the matrix
+%Create a row vector X1, from the elements of the 4th row of the matrix
 %’X’. To refer all the elements in the mth column we type X(:,m).
 X1=X(4,:)
 
