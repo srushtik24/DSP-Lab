@@ -1,0 +1,26 @@
+%a. while loop - repeatedly executes statements while condition is true, b. continue - loop to skip 
+%the remainder of its body, c. break - terminates the loop statement
+
+while 1 %will always return true and keep the loop running unless otherwise interrupted by us.
+    n= input("Enter your favourite number: ");
+    if rem(n,2)==0
+        fprintf("No, don't make me read even numbers, you're out\n");
+        break
+    else
+        fprintf("Nice, I love numbers that are not even, you get another chance \n");
+        continue
+    end
+end
+
+%for loop - a loop that needs to execute a specific number of times. 
+%Nested Loops - for or/and while.
+
+N= input("Enter a small number: ");
+for(i= 1:N)
+    fprintf("You're in outer loop number: %d\n", i);
+    for(j= 1:N-3)
+        fprintf("You're in inner loop number: %d\n",j);
+    end
+    fprintf("\n");
+end
+
