@@ -19,8 +19,8 @@ Results of our code (with screenshots)
 
 ## 2. MATLAB Commands: Graph, Save, and Read:
 * (a) Generate elementary signals and display using plot, subplot and stem commands in MATLAB. Also add xlabel, ylabel, axis tight, grid on, legend to the figure.
-* (b) save, load, xlsread, xlswrite, audioread and audiowrite commands:
-i. Create and save two variables, A and B, to a file called ABfile.mat.
+* (b) save, load, xlsread, xlswrite, audioread and audiowrite commands.
+    1. Create and save two variables, A and B, to a file called ABfile.mat.
 ii. Create and save two variables, A and B, to a file called AB1file.txt.
 iii. Create and save two variables, A and B, to a file called AB1file.xls.
 iv. Create two variables, save them to an ASCII file, and then view the
