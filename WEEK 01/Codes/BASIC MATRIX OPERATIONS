@@ -1,0 +1,36 @@
+%BASIC MATRIX OPERATIONS:
+
+%Create a simple vector with 10 elements called A
+A=[1:10]
+
+%Add 3 to each element of vector A and store the result in a new vector ’B’.
+B= A+3
+
+%Creating a 5 x 5 matrix ’X’ using semicolons (;) to separate the rows of a matrix.
+X=[1:5;6:10;11:15;16:20;21:25]
+
+%Find the transpose of the matrix X and store the result in a new matrix ’Y’.
+Y= X'
+
+%Multiply these two matrices, ’X’ and ’Y’
+Z= Y*X
+
+%Multiply the corresponding elements of two matrices i.e Array
+%Multiplication
+W= Y.*X
+
+%Create a column vector X1, from the elements of the 4th row of the matrix
+%’X’. To refer all the elements in the mth column we type X(:,m).
+X1=X(4,:)
+
+%Select the elements in the mth through nth columns of matrix ’X’. Here:
+%2nd to 4th column
+X2= X(:,2:end-1)
+
+%Create a sub-matrix ’X2’ taking the inner sub-part of matrix ’X’.
+X3=X(2:4, 2:4)
+
+%Delete a Row or a Column in a Matrix ’X’. Here: 2nd row
+X(2,:)=[]
+
+
