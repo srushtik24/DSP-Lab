@@ -14,6 +14,8 @@ Results of our code (with screenshots)
 * Delete a Row or a Column in a Matrix ’X’.
 
 <img src="Results\P1_1.PNG">
+<img src="Results\P1_2.PNG">
+<img src="Results\P1_3.PNG">
 
 ## 2. MATLAB Commands: Graph, Save, and Read:
 
