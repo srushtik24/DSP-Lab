@@ -1,1 +1,102 @@
--
+%repelem - Repeat copies of array elements (vector elements, matrix elements,and matrix columns)
+%for vectors:
+P=[1:3]
+Q=repelem(P,[2 3 4])
+%for matrix:
+A=[1:4; 5:8; 9:12; 13:16]
+B=repelem(A,2,3)
+%for the columns to repeat specefic number of times:
+M=[1:4; 5:8; 9:12; 13:16]
+N=repelem(A,1,[4,3,2,1])
+
+%repmat- Repeat copies of array
+A1=[1:4; 5:8; 9:12]
+B1=repmat(A1,2,3)
+
+%eye-Identity matrix
+%for a single 1:
+I1=eye
+%for a 3 x 4 matrix with 1 on diagonal places and 0 everywhere else:
+I2=eye(3,4)
+
+%zeroes gives a matrix full of zeroes
+Z=zeros(2,3)
+
+%ones gives a matrix full of ones
+O= ones(2,3)
+
+%rand(m,n) gives a matrix of m x n of random integers between 0 and 1,
+%extra: randi gives integer outputs only
+R=rand(3,4)
+
+%reshape - Reshape array (Vector into Matrix, Matrix to Have Specified Number
+%of Columns, Multidimensional Array into Matrix)
+A2=rand(4) %returns a 4 x 4 matrix
+B2=reshape(A2,[],2) %the [] makes MATLAB calculate the number of rows required for a fixed value 
+                    %of 2 columns.
+                    
+%cat- Concatenate arrays (along a specified dimension)
+C1= [1:3;4:6]
+C2=rand(2,3)
+C3=cat(1,C1,C2) %will concatenate about the rows.
+
+% horzcat - Concatenate arrays horizontally
+H1= [1:3;4:6]
+H2=rand(2,3)
+H3=horzcat(H1,H2)
+
+% vertcat - Concatenate arrays vertically                    
+V1= [1:3;4:6]
+V2=rand(2,3)
+V3=vertcat(V1,V2)
+
+%diag - Create diagonal matrix of the elements of a vector or get diagonal
+%elements of matrix
+v=[1:4]
+D1=diag(v)
+D2=diag(v,2) %puts the elements of v ont he 2nd diagonal
+D3=diag(A2) %gives elements of the digonals of A as a column vector;
+D4=diag(A2,2) %gives elements of the 2nd digonal of A as a column vector;
+
+%blkdiag- Block diagonal matrix
+V4=blkdiag(V1,V2) %the elements of V1 and V2 are aligned about the digonals of V4
+
+%fliplr - Flips a matrix left to right.
+F1=fliplr(A)
+
+%flipud - Flips a matrix up and down.
+F2=flipud(A)
+
+%rot90 - counterclockwise
+R1=rot90(A)
+R2=rot90(A,2) %rotates A by 2*90 degrees.
+
+%tril - Extracts lower triangular part
+T1=tril(A)
+
+%triu - Extracts upper triangular part
+T2=triu(A)
+
+%permute - rearranges the dimensions of A so that they are in the order
+%specified by us.
+P1=[1 2; 3 4]
+P2=permute(P1,[2 1])
+
+%circshift - Shift array circularly
+Cs=[1:6]
+Cs1=circshift(Cs,3) %circularly shifts the column vector 3 times
+
+%length - Length of largest array dimension
+L=length(A)
+
+%size - Array size
+[s1,s2]=size(A)
+
+%ndims - Number of array dimensions (returns the array dimension: >=2)
+N1=ndims(A)
+
+%numel - Number of array elements
+N2=numel(A)
+
+%isempty- Determine whether array is empty
+Is=isempty(A) %returns 1 if matrix is empty and 0 if not.
