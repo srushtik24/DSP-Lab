@@ -20,7 +20,28 @@ xlabel('Time'); ylabel('Amplitude'); title('Unit Step function');
 %--------------------------------------------------------------------------------------------
 
 %b)save, load, xlsread, xlswrite, audioread and audiowrite commands:
+A=[-5:0];
+B=10;
+save('ABfile.mat','A','B');
+save('AB1file.txt','A','B');
+save('AB1file.xls','A','B');
 
+save('myASCIIfile.txt','A','B','-ascii');
+type('myASCIIfile.txt'); %this displays the contents of the file. 
+
+s1.a='Srushti';
+s1.b=20;
+s1.c=[1,2,3];
+save('newstruct.mat','-struct','s1');
+whos('-file','newstruct.mat');
+
+P='Variable 1';
+Q='Variable 2';
+save('example.mat','P','Q');
+whos('-file','example.mat'); %displays the contents of the file. 
+R='Appended variable';
+save('example.mat','R','-append');
+whos('-file','example.mat');
 %--------------------------------------------------------------------------------------------
 
 %d)readcell and writecell commands:
