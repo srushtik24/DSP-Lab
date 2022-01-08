@@ -1,0 +1,65 @@
+%a) if ... end statement
+
+n= input("Hi, enter a positive number: \n");
+
+if n>0
+    fprintf("Thanks for listening or else I would've just ignored you.\n");
+end
+
+%b) if..else..end.. statement
+
+n= input("Hi, enter a positive number: \n");
+
+if n>0
+    fprintf("Thanks for listening to me.\n");
+else
+    fprintf("Oh, you had the audacity to rebel against me, bye, you won't get another chance.\n");
+end
+
+%c) If... elseif...elseif...else...end statements
+
+n= input("Enter a postive even number: ");
+
+if n>0 && ( rem(n,2)==0)
+    fprintf("Here, take a cookie for being nice\n");
+elseif n>0 && ~(rem(n,2)==0)
+    fprintf("Always read complete instructions, bud\n");
+else 
+    fprintf("Rebels will be excuted\n");
+end
+
+%d) The Nested if Statements
+
+n= input("Enter a postive even number: ");
+
+if n>0 
+    fprintf("Completed lvl 1\n");
+    if ( rem(n,2)==0)
+        fprintf("You won\n")
+    end
+else
+    fprintf("You lose for not following the instructions\n");
+end
+
+%e,f)Switch and Nested switch statements
+n=input("Enter either 1 or 2: ");
+a=1;
+b=2;
+switch (n)
+    case 1
+        fprintf("Good, you made it in\n");
+        switch (a)
+            case 1
+            fprintf("You chose %d\n", a);
+            case 2
+            fprintf("You chose %d\n", b);
+        end  
+        
+    case 2
+        fprintf("Good, you made it in\n");
+        switch (b)
+            case 2
+            fprintf("You chose %d\n", b);
+        end  
+         
+end 
