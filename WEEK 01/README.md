@@ -38,6 +38,11 @@ Results of our code (with screenshots)
 
 
 ## 3. Writing Expressions:
+* (a) Express the quadratic equation with ”a”, ”b”, and ”c” and its quadratic formula in MATLAB. Also find the roots of the quadratic equation by assumingthe weights ”a”, ”b”, and ”c” of the expression.
+* (b) Plot the function y = x^2 + 0.5x + 2 over the range x = [-5, 10].
+
+<img src="Results\P3_1.PNG">
+<img src="Results\P3_2.PNG">
 
 ## 4. MATLAB Commands: Create, Combine Arrays, Manipulations:
 
