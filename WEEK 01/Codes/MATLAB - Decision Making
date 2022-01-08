@@ -13,7 +13,7 @@ n= input("Hi, enter a positive number: \n");
 if n>0
     fprintf("Thanks for listening to me.\n");
 else
-    fprintf("Oh, you had the audacity to rebel against me, bye, you won't get another chance.\n");
+    fprintf("No more chances.\n");
 end
 
 %c) If... elseif...elseif...else...end statements
