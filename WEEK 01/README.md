@@ -86,6 +86,14 @@ ber of Columns, Multidimensional Array into Matrix)
 <img src="Results\P4_10.PNG">
 
 ## 5. MATLAB - Loop Types:
+Concept of While Loop, For Loop, Nested Loops, Break and continue
+<img src="Results\P5_1.PNG">
+<img src="Results\P5_2.PNG">
 
 ## 6. MATLAB - Decision Making:
-
+(a) if ... end statement
+(b) if...else...end statement
+(c) If... elseif...elseif...else...end statements
+(d) The Nested if Statements
+(e) switch statement
+(f) Nested switch Statements
