@@ -45,34 +45,31 @@ Results of our code (with screenshots)
 <img src="Results\P3_2.PNG">
 
 ## 4. MATLAB Commands: Create, Combine Arrays, Manipulations:
-(a) repelem - Repeat copies of array elements (vector elements, matrix elements,
-and matrix columns)
-(b) repmat- Repeat copies of array
-(c) eye-Identity matrix
-(d) zeros - Create array of all zeros
-(e) ones - Create array of all ones
-(f) rand - Uniformly distributed random numbers
+* repelem - Repeat copies of array elements (vector elements, matrix elements, and matrix columns)
+* repmat- Repeat copies of array
+* eye-Identity matrix
+* zeros - Create array of all zeros
+* ones - Create array of all ones
+* rand - Uniformly distributed random numbers
+* reshape - Reshape array (Vector into Matrix, Matrix to Have Specified Number of Columns, Multidimensional Array into Matrix)
 
-(g) reshape - Reshape array (Vector into Matrix, Matrix to Have Specified Num-
-ber of Columns, Multidimensional Array into Matrix)
-
-(h) cat- Concatenate arrays
-(i) horzcat - Concatenate arrays horizontally
-(j) vertcat - Concatenate arrays vertically
-(k) diag - Create diagonal matrix or get diagonal elements of matrix
-(l) blkdiag- Block diagonal matrix
-(m) fliplr - Flips a matrix left to right.
-(n) flipud - Flips a matrix up and down.
-(o) rot90 - counterclockwise
-(p) tril - Extracts lower triangular part
-(q) triu - Extracts upper triangular part
-(r) permute - Permute array dimensions
-(s) circshift - Shift array circularly
-(t) length - Length of largest array dimension
-(u) size - Array size
-(v) ndims - Number of array dimensions
-(w) numel - Number of array elements
-(x) isempty- Determine whether array is empty
+* cat- Concatenate arrays
+* horzcat - Concatenate arrays horizontally
+* vertcat - Concatenate arrays vertically
+* diag - Create diagonal matrix or get diagonal elements of matrix
+* blkdiag- Block diagonal matrix
+* fliplr - Flips a matrix left to right.
+* flipud - Flips a matrix up and down.
+* rot90 - counterclockwise
+* tril - Extracts lower triangular part
+* triu - Extracts upper triangular part
+* permute - Permute array dimensions
+* circshift - Shift array circularly
+* length - Length of largest array dimension
+* size - Array size
+* ndims - Number of array dimensions
+* numel - Number of array elements
+* isempty- Determine whether array is empty
 
 <img src="Results\P4_1.PNG">
 <img src="Results\P4_2.PNG">
@@ -93,9 +90,14 @@ Concept of While Loop, For Loop, Nested Loops,
 <img src="Results\P5_2.PNG">
 
 ## 6. MATLAB - Decision Making:
-    (a) if ... end statement
-    (b) if...else...end statement
-    (c) If... elseif...elseif...else...end statements
-    (d) The Nested if Statements
-    (e) switch statement
-    (f) Nested switch Statements
+* if ... end statement
+* if...else...end statement
+* If... elseif...elseif...else...end statements
+* The Nested if Statements
+* switch statement
+* Nested switch Statements
+<img src="Results\P6_1.PNG">
+<img src="Results\P6_2.PNG">
+<img src="Results\P6_3.PNG">
+<img src="Results\P6_4.PNG">
+<img src="Results\P6_5.PNG">
