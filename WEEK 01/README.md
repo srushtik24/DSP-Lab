@@ -13,7 +13,7 @@ Results of our code (with screenshots)
 * Create a sub-matrix ’X2’ taking the inner sub-part of matrix ’X’.
 * Delete a Row or a Column in a Matrix ’X’.
 
-<img src="results\P1_1.PNG">
+<img src="results\P1_1.png">
 
 ## 2. MATLAB Commands: Graph, Save, and Read:
 
