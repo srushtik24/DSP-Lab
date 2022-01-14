@@ -1,0 +1,30 @@
+clc;
+clear all;
+close all;
+
+%We cant write x=load'..' cause our signals are workspaces so structure
+%banega
+
+load('ppg_baseline_awgn.mat'); %Loads the workspace that has our signal as a variable of the structure/workspace
+x=ppg_baseline_awgnnoise;
+y=zeros(1,length(x));
+M=[10,25,50,100];
+
+for i=1:length(M)
+    x_new=[x, zeros(1,M(i)-1)]; %Zero padding our signal
+    for n=1:length(y)
+    sum=0;
+        for k=1:M(i)-1
+            sum=sum+ x_new(n-k+M(i)-1);
+        end
+        y(n)=1/M(i).*sum;
+    end 
+    subplot(5,1,1)
+    plot(x); axis tight; grid ON;
+    xlabel('Time "n"'); ylabel('Amplitude'); title('Original ppg signal');
+    subplot(5,1,i+1)
+    plot(y); axis tight; grid ON;
+    xlabel('Time "n"'); ylabel('Amplitude'); title('Cleaned ppg signal');
+
+end
+
