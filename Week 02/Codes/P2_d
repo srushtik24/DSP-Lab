@@ -1,0 +1,49 @@
+clc;
+clear all;
+close all;
+
+%Magnitude and Phase responses:
+
+f=125;
+T=1/125; %Scaling factor
+w=0:0.1:2*pi;
+j=sqrt(-1);
+
+%First order derivative filter-
+H1=10*log10(abs(1/T*(1-exp(-j*w))));
+
+figure(1) %For magnitude response
+subplot(3,1,1)
+plot(w,H1); axis tight; grid ON;
+xlabel('Angular Frequncy'); ylabel('Amplitude'); title('First order derivative filter');
+
+figure(2) %For phase response
+subplot(3,1,1)
+plot(w,angle(1/T*(1-exp(-j*w)))); axis tight; grid ON;
+xlabel('Angular Frequncy'); ylabel('Amplitude'); title('First order derivative filter');
+
+%Second order derivative filter-
+H2=10*log10(abs(1/T*(1-2*exp(-j*w)+exp(-2*j*w))));
+
+figure(1)
+subplot(3,1,2)
+plot(w,H2); axis tight; grid ON;
+xlabel('Angular Frequncy'); ylabel('Amplitude'); title('Second order derivative filter');
+
+figure(2) %For phase response
+subplot(3,1,2)
+plot(w,angle((1/T*(1-2*exp(-j*w)+exp(-2*j*w))))); axis tight; grid ON;
+xlabel('Angular Frequncy'); ylabel('Amplitude'); title('First order derivative filter');
+
+%Central difference derivative filter-
+H3=10*log10(abs(1/(2*T)*(1-exp(j*w)).*(1+exp(j*w))));
+
+figure(1)
+subplot(3,1,3)
+plot(w,H3); axis tight; grid ON;
+xlabel('Angular Frequncy'); ylabel('Amplitude'); title('Central Difference derivative filter');
+
+figure(2) %For phase response
+subplot(3,1,3)
+plot(w,angle(1/(2*T)*(1-exp(j*w)).*(1+exp(j*w)))); axis tight; grid ON;
+xlabel('Angular Frequncy'); ylabel('Amplitude'); title('First order derivative filter');
