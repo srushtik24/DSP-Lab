@@ -1,0 +1,39 @@
+clc;
+clear all;
+close all;
+
+load('ecg_baseline_awgn.mat'); %Loads the workspace that has our signal as a variable of the structure/workspace
+x=ecg_baseline_awgnnoise;
+y=zeros(1,length(x));
+T=1/125;
+
+y_first_order(1)=1/T*x(1);
+y_second_order(1)=1/T*x(1);
+y_second_order(2)=1/T*(x(2)-2*x(1));
+y_central_derivative(1)=1/(2*T)*x(1);
+y_central_derivative(1)=1/(2*T)*x(2);
+
+for n=2:length(x)
+    y_first_order(n)=1/T*(x(n)-x(n-1));
+end
+
+for n=3:length(x)
+    y_second_order(n)=1/T*(x(n)-2*x(n-1)+x(n-2));
+end
+
+for n=3:length(x)
+    y_central_derivative(n)=1/(2*T)*(x(n)-x(n-2));
+end
+
+subplot(4,1,1)
+plot(x); axis tight; grid ON;
+xlabel('Time in "n"'); ylabel('Amplitude');title('Original signal');
+subplot(4,1,2)
+plot(y_first_order); axis tight; grid ON;
+xlabel('Time in "n"'); ylabel('Amplitude');title('First order output');
+subplot(4,1,3)
+plot( y_second_order); axis tight; grid ON;
+xlabel('Time in "n"'); ylabel('Amplitude');title('Second order output');
+subplot(4,1,4)
+plot(y_central_derivative); axis tight; grid ON;
+xlabel('Time in "n"'); ylabel('Amplitude');title('Third order output');
