@@ -1,0 +1,11 @@
+%First order high pass filter:
+subplot(3,1,1)
+zplane(1,0); title('First order high pass filter');
+
+%Second order high pass filter:
+subplot(3,1,2)
+zplane([1;1],[0;0]); title('Second order high pass filter');
+
+%Central difference high pass filter:
+subplot(3,1,3)
+zplane([1;-1],0); title('Central Difference high pass filter');
