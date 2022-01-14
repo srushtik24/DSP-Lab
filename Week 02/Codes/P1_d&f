@@ -1,0 +1,15 @@
+w=-2*pi:0.01:2*pi;
+M=4;
+j=sqrt(-1);
+
+H=abs(1/M*((exp(j*w*M)-1)./((exp(j*w)-1).*exp(j*w*M-1))));
+H_angle=1/M*((exp(j*w*M)-1)./((exp(j*w)-1).*exp(j*w*M-1)));
+subplot(2,1,1)
+plot(w,H); axis tight; grid ON;
+xlabel('Angular frequency'); title('Magnitude response for M=4'); ylabel('Amplitude');
+subplot(2,1,2)
+plot(w,angle(H_angle)); axis tight; grid ON;
+xlabel('Angular frequency'); title('Frequency response for M=4'); ylabel('Amplitude');
+
+figure
+zplane([1/4,1/4,1/4,1/4],[1,0,0,0]); %For M=4, there will be 3 zeroes and 3 poles
