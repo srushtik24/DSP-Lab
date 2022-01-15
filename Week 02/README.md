@@ -14,6 +14,7 @@
 Code (d,f):
 
 Results(d,f respectively):
+
 <img src="Results\P1_d.PNG">
 <img src="Results\P1_f.PNG">
 <hr />
@@ -37,6 +38,7 @@ Result (PPG):
 <img src="Results\P1_h_ppg.PNG">
 
 <hr />
+
 ## Observation:
 1. As the value of M increases, the smoothness in the output decreases. Noise is high frequency but a Moving Average filter is a simple Low pass filter. This does not mean we can take any arbitrary value of M because we might end up losing data. 
 2. As M increases, the cut-off frequency decreases.
