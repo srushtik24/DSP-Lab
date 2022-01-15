@@ -67,7 +67,7 @@ Results:
 <hr />
 
 2) f:
-Code: 
+  Code: 
 
 Result:
 <img src="Results\P2_f.PNG">
