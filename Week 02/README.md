@@ -8,6 +8,7 @@
 1) a, b, c:
 <img src="Equations\abc.PNG">
 <hr />
+
 1) d, e,f:
 <img src="Equations\de.PNG">
 
@@ -37,12 +38,49 @@ Code (PPG):
 Result (PPG):
 <img src="Results\P1_h_ppg.PNG">
 
-<hr />
-
 ## Observation:
 1. As the value of M increases, the smoothness in the output decreases. Noise is high frequency but a Moving Average filter is a simple Low pass filter. This does not mean we can take any arbitrary value of M because we might end up losing data. 
 2. As M increases, the cut-off frequency decreases.
 3. M order MA filter has M-1 poles and M-1 zeros.
 
 <hr />
+
 ## P2: DERIVATIVE FILTERS:
+
+2) a, b:
+<img src="Equations\2ab.PNG">
+<hr />
+
+2) c:
+<img src="Equations\2c.PNG">
+<hr />
+
+2) d:
+<img src="Equations\2d.PNG">
+Results: 
+<img src="Results\P2_d_1.PNG">
+<img src="Results\P2_d_2.PNG">
+<hr />
+
+2) e:
+<img src="Equations\2e.PNG">
+<hr />
+
+2) f:
+Code: 
+
+Result:
+<img src="Results\P2_f.PNG">
+<hr />
+
+2) g:
+Code (ECG): 
+
+Result (ECG):
+<img src="Results\P2_g_ecg.PNG">
+
+Code (PPG): 
+
+Result (PPG):
+<img src="Results\P2_g_ppg.PNG">
+<hr />
