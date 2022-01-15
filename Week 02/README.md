@@ -12,8 +12,6 @@
 1. d, e,f:
 <img src="Equations\de.PNG">
 
-Code (d,f):
-
 Results(d,f respectively):
 
 <img src="Results\P1_d.PNG">
@@ -21,19 +19,15 @@ Results(d,f respectively):
 <hr />
 
 1. g:
-Code:
 
 Result:
 <img src="Results\P1_g.PNG">
 <hr />
 
 1. h:
-Code (ECG):
 
 Result (ECG):
 <img src="Results\P1_h_ecg.PNG">
-
-Code (PPG):
 
 Result (PPG):
 <img src="Results\P1_h_ppg.PNG">
@@ -67,19 +61,14 @@ Results:
 <hr />
 
 2. f:
-Code: 
 
 Result:
 <img src="Results\P2_f.PNG">
 <hr />
 
 2. g:
-Code (ECG): 
-
 Result (ECG):
 <img src="Results\P2_g_ecg.PNG">
-
-Code (PPG): 
 
 Result (PPG):
 <img src="Results\P2_g_ppg.PNG">
