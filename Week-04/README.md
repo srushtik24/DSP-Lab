@@ -40,7 +40,7 @@ Code-
 <p align="center">
   <img src="Pictures\amp_ph_code.PNG"> 
 </p>
-Result- For a test signal- x=sin(2*pi*500*t)+sin(2*pi*1000*t)+sin(2*pi*20*t);
+Result- For a test signal- x=sin(2*pi*50*t)+sin(2*pi*500*t);
 <p align="center">
   <img src="Pictures\testsig.PNG"> 
 </p>
@@ -88,9 +88,14 @@ Main Driver code-
 <hr/>
 
 ## Discussion:
-a. The DFT of a real-valued discrete-time signal has a special symmetry, in which the real part of the transform values are DFT even symmetric and the imaginary part is DFT odd symmetric. 
-b. We were asked to remove frequency components from around 50Hz signal(noise) with a margin of 2Hz hence we silenced the 48Hz-52Hz components but considering the symmetry, we also removed components that were around 125-50Hz (73-77).
-c. The only difference between the 3 ppg signals or the 3 ecg signals is their amplitudes.
+  a. The DFT of a real-valued discrete-time signal has a special symmetry, in which the real part of the transform values are DFT even symmetric and the imaginary part is DFT odd symmetric. 
+  b. We were asked to remove frequency components from around 50Hz signal(noise) with a margin of 2Hz hence we silenced the 48Hz-52Hz components but considering the symmetry, we also removed components that were around 125-50Hz (73-77).
+  c. The only difference between the 3 ppg signals or the 3 ecg signals is that their noises have different amplitude, this can be seen in the error curves.
 
 ## Conclusion:
 We succesfully created function blocks for each part and completed the assignment. We observed the results for the given six signals and learned how to remove unwanted signals and noises and saw completely smoothened signals in output.
+
+<p align="center">
+  -x-x-x-
+</p>
+
