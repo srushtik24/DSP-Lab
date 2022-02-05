@@ -13,7 +13,7 @@ Formula-
 
 Code-
 <p align="center">
-  <img src="Pictures\dft_code.png"> 
+  <img src="Pictures\dft_code.PNG"> 
 </p>
 <hr/>
 
@@ -27,7 +27,7 @@ Formula-
 
 Code-
 <p align="center">
-  <img src="Pictures\idft_formula.PNG"> 
+  <img src="Pictures\idft_code.PNG"> 
 </p>
 <hr/>
 
