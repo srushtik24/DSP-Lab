@@ -98,4 +98,3 @@ We succesfully created function blocks for each part and completed the assignmen
 <p align="center">
   -x-x-x-
 </p>
-
