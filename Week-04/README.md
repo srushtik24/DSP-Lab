@@ -94,7 +94,7 @@ Main Driver code-
 
 ## Conclusion:
 We succesfully created function blocks for each part and completed the assignment. We observed the results for the given six signals and learned how to remove unwanted signals and noises and saw completely smoothened signals in output.
-
+NOTE: Small correction, in the code for DFT, we needed to change the Sampling frequency from 125 to the given ecg sampling frequency which I missed while creating the report but upon rechecking (same day), I have obtained the smoothened out results (not attached)
 <p align="center">
   -x-x-x-
 </p>
