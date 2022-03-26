@@ -10,7 +10,7 @@ Write Arduino programs for studying-
 The moving average filter is a simple Low Pass FIR (Finite Impulse Response). It takes some samples of input and takes the mean of those to produce a single output. As the length of the filter increases, the smoothness of the output increases.
 <hr />
 
-# **2. Autocorrelation: **
+# **2. Autocorrelation:**
 
 Codes:
 1. PPG Signal:
@@ -100,7 +100,7 @@ void loop() {
   }
    
 ```
-
+``` cpp
 2. ECG Signal:
 const int len=1800;
 const int M=4;
@@ -193,3 +193,4 @@ void loop() {
     float pulserate=60*125/sample;
     Serial.print(pulserate);
 }
+```
