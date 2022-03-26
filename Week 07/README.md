@@ -213,6 +213,7 @@ The pulse rate of a PPG Signal:
 </p>
 
 Results of Moving Average filter (filters out high frequency noise) on the PPG Signal:
+
 https://user-images.githubusercontent.com/66772221/160241515-550db193-5eb4-46a1-aa36-ba5ac2eddb0a.mp4
 
 The pulse rate of an ECG Signal:
@@ -222,8 +223,6 @@ The pulse rate of an ECG Signal:
 
 Results of Moving Average filter (filters out high frequency noise) on the ECG Signal:
 
-
-
 https://user-images.githubusercontent.com/66772221/160241613-12a849ba-048d-47cf-a475-0317d2b0cdc7.mp4
 
-
+</hr>
