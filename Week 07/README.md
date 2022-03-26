@@ -8,12 +8,17 @@ Write Arduino programs for studying-
 
 # **1. Moving Average Filter**
 The moving average filter is a simple Low Pass FIR (Finite Impulse Response). It takes some samples of input and takes the mean of those to produce a single output. As the length of the filter increases, the smoothness of the output increases.
+
+<p align="center">
+  <img src="Pictures\MA.PNG"> 
+</p>
+
 <hr />
 
 # **2. Autocorrelation:**
 Autocorrelation, also known as serial correlation, is the correlation of a signal with a delayed copy of itself as a function of delay.
 <p align="center">
-  <img src="Results\auto.PNG"> 
+  <img src="Pictures\auto.PNG"> 
 </p>
 
 <hr/>
