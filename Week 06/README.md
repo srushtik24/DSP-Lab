@@ -8,5 +8,5 @@ https://user-images.githubusercontent.com/66772221/160236139-785d1366-ae41-4b4d-
 
 ## P2: BLUETOOTH-
 <p align="center">
-  <img src="Results\bluetooth"> 
+  <img src="Results\bluetooth.png"> 
 </p>
