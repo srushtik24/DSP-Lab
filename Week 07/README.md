@@ -11,6 +11,12 @@ The moving average filter is a simple Low Pass FIR (Finite Impulse Response). It
 <hr />
 
 # **2. Autocorrelation:**
+Autocorrelation, also known as serial correlation, is the correlation of a signal with a delayed copy of itself as a function of delay.
+<p align="center">
+  <img src="Results\auto.PNG"> 
+</p>
+
+<hr/>
 
 Codes:
 1. PPG Signal:
