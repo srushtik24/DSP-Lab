@@ -6,24 +6,24 @@ Write Arduino programs for studying-
 * Use of Auto-correlation to find the pulse rate of PPG and ECG signals
 
 
-# **1. Moving Average Filter**
+## **1. Moving Average Filter**
 The moving average filter is a simple Low Pass FIR (Finite Impulse Response). It takes some samples of input and takes the mean of those to produce a single output. As the length of the filter increases, the smoothness of the output increases.
 
 <p align="center">
-  <img src="Pictures\MA.PNG"> 
+  <img src="Pictures\MA.png"> 
 </p>
 
 <hr />
 
-# **2. Autocorrelation:**
+## **2. Autocorrelation:**
 Autocorrelation, also known as serial correlation, is the correlation of a signal with a delayed copy of itself as a function of delay.
 <p align="center">
-  <img src="Pictures\auto.PNG"> 
+  <img src="Pictures\auto.JPG"> 
 </p>
 
 <hr/>
 
-Codes:
+## **Codes**
 1. PPG Signal:
 ``` cpp
 const int len=625;
@@ -206,3 +206,24 @@ void loop() {
     Serial.print(pulserate);
 }
 ```
+## **Results**
+The pulse rate of a PPG Signal:
+<p align="center">
+  <img src="Pictures\PPG_PR.PNG"> 
+</p>
+
+Results of Moving Average filter (filters out high frequency noise) on the PPG Signal:
+https://user-images.githubusercontent.com/66772221/160241515-550db193-5eb4-46a1-aa36-ba5ac2eddb0a.mp4
+
+The pulse rate of an ECG Signal:
+<p align="center">
+  <img src="Pictures\ECG_PR.PNG"> 
+</p>
+
+Results of Moving Average filter (filters out high frequency noise) on the ECG Signal:
+
+
+
+https://user-images.githubusercontent.com/66772221/160241613-12a849ba-048d-47cf-a475-0317d2b0cdc7.mp4
+
+
