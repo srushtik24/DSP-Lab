@@ -61,6 +61,14 @@ sgtitle('Low Pass filter');
 ```
 
 Result (After passing ECG signal):
+1. Magnitude and Phase response:
+<p align="center">
+  <img src="Pictures\LPF1.PNG"> 
+</p>
+2. Filtered versus Original signal:
+<p align="center">
+  <img src="Pictures\LPF2.PNG"> 
+</p>
 
 </hr>
 
@@ -116,6 +124,14 @@ sgtitle('High Pass filter');
 ```
 
 Result (After passing ECG signal):
+1. Magnitude and Phase response:
+<p align="center">
+  <img src="Pictures\HPF1.PNG"> 
+</p>
+2. Filtered versus Original signal:
+<p align="center">
+  <img src="Pictures\HPF2.PNG"> 
+</p>
 
 </hr>
 
@@ -174,6 +190,15 @@ sgtitle('Band Pass filter');
 ```
 
 Result (After passing ECG signal):
+1. Magnitude and Phase response:
+<p align="center">
+  <img src="Pictures\BPF1.PNG"> 
+</p>
+
+2. Filtered versus Original signal:
+<p align="center">
+  <img src="Pictures\BPF2.PNG"> 
+</p>
 
 </hr>
 
@@ -234,5 +259,14 @@ sgtitle('Band Pass filter');
 ```
 
 Result (After passing ECG signal):
+1. Magnitude and Phase response:
+<p align="center">
+  <img src="Pictures\BSF1.PNG"> 
+</p>
+
+2. Filtered versus Original signal:
+<p align="center">
+  <img src="Pictures\BSF2.PNG"> 
+</p>
 
 </hr>
